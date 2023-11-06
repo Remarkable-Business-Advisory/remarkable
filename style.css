@@ -1,0 +1,113 @@
+/* ROOT */
+
+:root {
+    --logo-color: #594839;
+}
+
+.text-color-logo {
+    color: var(--logo-color);
+}
+
+/* Custom CSS for your header */
+#language-bar {
+    justify-content: space-between;
+    height: 40px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.custom-d-flex {
+    display: flex;
+}
+
+.language-option {
+    cursor: pointer;
+}
+
+.language-option:hover {
+    text-decoration: underline;
+}
+
+/* This is for the Hamburger Menu */
+
+/* Center-align the items in the navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--logo-color);
+}
+
+/* Change background color on hover */
+.navbar-nav .nav-item:hover {
+    background-color: #a1a1a1; /* Change to your desired hover color */
+}
+
+/* Change color of nav links on hover */
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--logo-color); /* Change to your desired link color on hover */
+}
+
+/* Add padding to the navbar items to separate them */
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust the value to your desired spacing */
+}
+
+#navbarNav {
+    max-width: 700px;
+}
+
+.nav-item {
+    border-radius: 5px;
+}
+
+.navbar-collapse {
+    margin-left: 30px;
+}
+
+.navbar-toggler {
+    border: 2px solid var(--logo-color);
+}
+
+.navbar-toggler-icon::before {
+    border-color: var(--logo-color);
+}
+
+.navbar-toggler-icon
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2889, 72, 57, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+main {
+    margin-top: 78px;
+}
+
+#home {
+    position: relative;
+    height: 120vh; /* Set the desired height (100% of viewport height) */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    text-align: center; /* Optionally, to center text within the container */
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+  }
+
+  video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Set the text color to white or your desired color */
+}
