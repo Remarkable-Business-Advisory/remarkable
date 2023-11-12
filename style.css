@@ -4,6 +4,17 @@
     --logo-color: #594839;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: calc(100vh - 17px);
+    display: flex;
+    flex-direction: column;
+}
+
 .text-color-logo {
     color: var(--logo-color);
 }
@@ -55,7 +66,13 @@
 }
 
 #navbarNav {
-    max-width: 700px;
+    max-width: 500px;
+}
+
+@media (max-width: 767px) {
+    #navbarNav {
+        margin: auto;
+    }
 }
 
 .nav-item {
@@ -79,35 +96,72 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2889, 72, 57, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+@media (max-width: 600) {
+    /* Customize the breakpoint for the navbar to collapse */
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+    }
+    .navbar-expand-lg .navbar-toggler-icon {
+        display: none;
+    }
+}
+
 main {
-    margin-top: 78px;
+    flex: 1;
+    margin-top: 128px;
 }
 
 #home {
     position: relative;
-    height: 120vh; /* Set the desired height (100% of viewport height) */
+    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
     text-align: center; /* Optionally, to center text within the container */
-    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+    margin-top: -50px;
   }
 
-  video {
+.video-container {
     width: 100%;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+}
+
+video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+    object-fit: cover;
+}
 
-  .video-overlay {
+.video-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the overlay is above the video */
     text-align: center;
-    color: white; /* Set the text color to white or your desired color */
+    color: white;
+}
+
+.video-overlay h1 {
+    font-size: clamp(36px, 6.5vw, 60px);
+}
+
+.video-overlay p, .video-overlay a {
+    font-size: clamp(24px, 2.5vw, 32);
+}
+
+section h2 {
+    text-align: center;
+    padding-bottom: 20px;
 }
