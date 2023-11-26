@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>RBA Services</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!-- Bottom Row (Logo and Hamburger Menu) - Stays fixed at the top -->
+        <nav id="navbar" class="navbar navbar-expand-md bg-light">
+            <a class="navbar-brand" href="../">
+                <img src="../media/logos/RBA.png" alt="Remarkable" width="50">
+            </a>
+            <div id="language-bar" class="custom-d-flex p-2 text-color-logo">
+                <a class="language-option mr-5 active-lang">EN</a>
+                <a href="rs-about.html" class="language-option">RS</a>
+            </div>
+            <button class="navbar-toggler text-color-logo" type="button" data-toggle="collapse"
+                data-target="#navbarNav">
+                <span class="navbar-toggler-icon text-color-logo"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 text-color-logo" id="navbarNav">
+                <ul class="navbar-nav ml-auto w-100 text-color-logo">
+                    <li class="nav-item nav-item-clickable w-100 text-center text-color-logo">
+                        <a class="nav-link text-color-logo" href="../">Home</a>
+                    </li>
+                    <li class="nav-item nav-item-clickable w-100 text-center">
+                        <a class="nav-link text-color-logo" href="./about">About</a>
+                    </li>
+                    <li class="nav-item nav-item-clickable w-100 text-center">
+                        <a class="nav-link text-color-logo" href="./services">Services</a>
+                    </li>
+                    <li class="nav-item nav-item-clickable w-100 text-center">
+                        <a class="nav-link text-color-logo" href="./contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero bg-light text-white text-center">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="../media/videos/services.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-overlay">
+                <h1 class="display-4">Services</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="my-5 text-center">Our Services</h2>
+
+                <!-- Service: Business Set Up and Opening Bank Accounts -->
+                <div class="service row mb-4">
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <h4 class="my-4">Business Setup</h4>
+                        <p>
+                            Launch your business with confidence. We handle the entire process of business setup, from
+                            legal
+                            registrations to obtaining necessary permits. Our experts guide you through the selection of
+                            the
+                            most suitable business structure. Additionally, we assist in opening business bank accounts,
+                            ensuring smooth financial operations right from the start.
+                        </p>
+                        <a href="./services/business-setup" class="btn btn-info btn-lg mb-5">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../media/services/business-setup-image.jpg" alt="Business Set Up Image"
+                            class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Service: Tax and Accounting -->
+                <div class="service row mb-4">
+                    <div class="col-md-6 order-md-2 d-flex flex-column align-items-center">
+                        <h4 class="my-4">Tax and Accounting</h4>
+                        <p>
+                            Navigate the complexities of taxation and accounting with our dedicated team. We offer
+                            strategic
+                            tax planning to minimize liabilities and maximize returns. Our accounting services
+                            include
+                            bookkeeping, financial statement preparation, and compliance reporting. Trust us to keep
+                            your
+                            financial records accurate, up-to-date, and in compliance with regulatory requirements.
+                        </p>
+                        <a href="./services/tax-and-accounting" class="btn btn-info btn-lg mb-5">Learn More</a>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="../media/services/tax-accounting-image.jpg" alt="Tax and Accounting Image"
+                            class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Service: Visa and Residence -->
+                <div class="service row mb-4">
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <h4 class="my-4">Corporate Services</h4>
+                        <p>
+                            Secure the necessary visas and residence permits effortlessly. Our team streamlines the
+                            application process, providing guidance on the required documentation and procedures.
+                            Whether
+                            you're an individual relocating or a company managing international talent, we ensure a
+                            smooth
+                            transition and compliance with immigration regulations.
+                        </p>
+                        <a href="./services/corporate-services" class="btn btn-info btn-lg mb-5">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../media/services/visa-residence-image.jpg" alt="Corporate Services"
+                            class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Service: Real Estate -->
+                <div class="service row mb-4">
+                    <div class="col-md-6 order-md-2 d-flex flex-column align-items-center">
+                        <h4 class="my-4">Real Estate</h4>
+                        <p>
+                            Find the perfect real estate solutions for your business needs. Our real estate services
+                            cover
+                            commercial and residential properties, guiding you through property acquisition, leasing,
+                            and
+                            investment opportunities. Whether you're expanding your office space, establishing a retail
+                            presence, or investing in property, we help you make informed decisions aligned with your
+                            business goals.
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="../media/services/real-estate-image.jpg" alt="Tax and Accounting Image"
+                            class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Service: Logistics -->
+                <div class="service row mb-4">
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <h4 class="my-4">Logistics</h4>
+                        <p>
+                            Optimize your supply chain with our comprehensive logistics support. We offer tailored
+                            solutions
+                            for efficient transportation, warehousing, and distribution. From coordinating shipments to
+                            managing inventory, our logistics services contribute to the seamless flow of goods,
+                            ensuring
+                            timely deliveries and cost-effective operations.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../media/services/logistics-image.jpg" alt="Business Set Up Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="./contact" class="btn btn-info btn-lg mb-5">Get in Contact</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="list-unstyled list-inline mb-0">
+                        <li class="list-inline-item mr-5"> <!-- Add margin to the right -->
+                            <a target="_blank" href="https://www.youtube.com/@remarkablebusinessadvisory"
+                                class="text-light">
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-5"> <!-- Add margin to the right -->
+                            <a target="_blank" href="https://www.linkedin.com/company/remarkable-business-advisory/"
+                                class="text-light">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item"> <!-- No margin on the last item -->
+                            <a target="_blank" href="https://www.instagram.com/rba_fzco/" class="text-light">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

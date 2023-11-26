@@ -10,9 +10,18 @@ body, html {
 }
 
 body {
-    min-height: calc(100vh - 17px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .text-color-logo {
@@ -130,10 +139,10 @@ body {
 
 main {
     flex: 1;
-    margin-top: 128px;
+    margin-top: 56px;
 }
 
-#home {
+#home, #who-we-are {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -141,7 +150,6 @@ main {
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
     text-align: center; /* Optionally, to center text within the container */
-    margin-top: -50px;
   }
 
 .video-container {
@@ -186,7 +194,6 @@ video {
 }
 
 section h2 {
-    
     text-align: center;
     padding-bottom: 20px;
 }
@@ -194,4 +201,10 @@ section h2 {
 
 #who-we-are {
     margin-top: -72px;
+}
+
+#contactForm {
+    width: 98vw;
+    max-width: 600px;
+    margin: auto;
 }
