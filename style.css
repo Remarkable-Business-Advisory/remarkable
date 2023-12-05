@@ -203,8 +203,32 @@ section h2 {
     margin-top: -72px;
 }
 
+#contactIcons {
+    width: 98vw;
+    max-width: 600px;
+    margin: auto;
+}
+
 #contactForm {
     width: 98vw;
     max-width: 600px;
     margin: auto;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: block;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(15, 15, 15);
+    font-size: clamp(36px, 6.5vw, 60px);
 }

@@ -44,35 +44,76 @@
         </nav>
     </header>
     <main>
-        <div class="">
-            <div class="d-flex flex-column align-items-center m-auto">
-                <h2 class="mt-5">Contact</h4>
-                    <div class="col-md-6 mt-4">
-                        <p><strong>Email:</strong> info@rbaconsultancy.com</p>
-                        <p><strong>Phone:</strong> 971506153958</p>
-                        <p><strong>WhatsApp:</strong> +77012781881</p>
-                    </div>
-                    <p class="text-center mt-4">Use the form below to send a message to us!</p>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <div class="d-flex flex-column align-items-center">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
+        <section id="contact-hero" class="text-center">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="../media/contact/abu-dhabi-map.png" style="width:100%">
+                    <h2 class="text">Contact</h2>
+                </div>
+
+                <!--<div class="mySlides">
+                    <img src="../media/contact/dubai-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/contact/sharjah-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/contact/ajman-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/contact/rak-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/contact/jebel-ali-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/contact/fujairah-map.png" style="width:100%">
+                    <div class="text">Contact</div>
+                </div>-->
+
+                <!-- Add more slides as needed -->
+
+                <script src="script.js"></script>
             </div>
-        </div>
+        </section>
+        <section class="my-5 mx-auto d-flex flex-column align-items-center">
+            <div id="contactIcons" class="mt-4 mx-auto d-flex flex-row justify-content-around align-items-center">
+                <a href="mailto:info@rbaconsultancy.com" target="_blank"><i class="fas fa-envelope fa-5x"
+                        style="color: #EA4335"></i></a>
+                <a href="tel:+971506153958" target="_blank"><i class="fas fa-phone fa-4x"
+                        style="color: #24A1DE"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+77012781881" target="_blank"><i
+                        class="fab fa-whatsapp fa-5x" style="color: #25D366"></i></a>
+            </div>
+            <p class="text-center mt-4">Use the form below to send a message to us!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer class="bg-dark text-light py-3">
         <div class="container">
