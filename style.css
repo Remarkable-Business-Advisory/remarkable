@@ -4,7 +4,8 @@
     --logo-color: #594839;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
@@ -77,17 +78,20 @@ a:hover {
 
 /* Change background color on hover */
 .navbar-nav .nav-item:hover {
-    background-color: #a1a1a1; /* Change to your desired hover color */
+    background-color: #a1a1a1;
+    /* Change to your desired hover color */
 }
 
 /* Change color of nav links on hover */
 .navbar-nav .nav-item:hover .nav-link {
-    color: var(--logo-color); /* Change to your desired link color on hover */
+    color: var(--logo-color);
+    /* Change to your desired link color on hover */
 }
 
 /* Add padding to the navbar items to separate them */
 .navbar-nav .nav-item {
-    margin-right: 10px; /* Adjust the value to your desired spacing */
+    margin-right: 10px;
+    /* Adjust the value to your desired spacing */
 }
 
 #navbarNav {
@@ -116,22 +120,25 @@ a:hover {
     border-color: var(--logo-color);
 }
 
-.navbar-toggler-icon
-{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2889, 72, 57, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 @media (max-width: 600) {
+
     /* Customize the breakpoint for the navbar to collapse */
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
     }
+
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
+
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
     }
+
     .navbar-expand-lg .navbar-toggler-icon {
         display: none;
     }
@@ -142,20 +149,26 @@ main {
     margin-top: 56px;
 }
 
-#home, #who-we-are {
+#home,
+#who-we-are {
     position: relative;
     overflow: hidden;
     width: 100%;
+    max-height: 700px;
     display: flex;
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
-    text-align: center; /* Optionally, to center text within the container */
-  }
+    justify-content: center;
+    /* Horizontally center content */
+    align-items: center;
+    /* Vertically center content */
+    text-align: center;
+    /* Optionally, to center text within the container */
+}
 
 .video-container {
     width: 100%;
     position: relative;
-    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio (9 / 16 * 100%) */
 }
 
 video {
@@ -174,7 +187,8 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Ensure the overlay is above the video */
+    z-index: 1;
+    /* Ensure the overlay is above the video */
     text-align: center;
     color: white;
 }
@@ -183,7 +197,8 @@ video {
     font-size: clamp(36px, 6.5vw, 60px);
 }
 
-.video-overlay p, .video-overlay a {
+.video-overlay p,
+.video-overlay a {
     font-size: clamp(24px, 2.5vw, 32);
 }
 
@@ -192,6 +207,43 @@ video {
         display: none;
     }
 }
+
+/* About section of home page */
+
+#about {
+    position: relative;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('./media/logos/RBA.png');
+    background-size: contain;
+    /* Adjust as needed */
+    background-position: center;
+    /* Adjust as needed */
+    background-repeat: no-repeat;
+    padding: 20px;
+    /* Add padding to separate content from the background */
+    filter: grayscale(100%);
+    opacity: 0.1;
+    z-index: -1;
+    padding: 50px;
+}
+
+#about .container {
+    position: relative;
+}
+
+/* home page, partners section */
+
+
+
+/* about page */
 
 section h2 {
     text-align: center;
