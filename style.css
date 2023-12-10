@@ -510,3 +510,22 @@ section h2 {
     color: rgb(15, 15, 15);
     font-size: clamp(36px, 6.5vw, 60px);
 }
+
+/* Whatsapp Floating image */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.whatsapp-icon img {
+    width: 80%; /* Adjust the size of the WhatsApp icon */
+}
