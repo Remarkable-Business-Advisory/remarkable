@@ -4,6 +4,10 @@
     --logo-color: #594839;
 }
 
+.logo-color {
+    color: var(--logo-color);
+}
+
 body,
 html {
     margin: 0;
