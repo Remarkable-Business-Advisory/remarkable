@@ -150,7 +150,8 @@ main {
 }
 
 #home,
-#about-hero {
+#about-hero,
+#contact-hero {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -494,13 +495,15 @@ section h2 {
     #about-intro .card {
         overflow: hidden;
     }
-    
+
     #about-intro .card-body img {
         height: 100%; /* Full height */
         width: auto; /* Auto width */
         overflow: hidden;
     }
 }
+
+/* Contact Page */
 
 #contactIcons {
     width: 98vw;
