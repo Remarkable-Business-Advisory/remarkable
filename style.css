@@ -559,6 +559,12 @@ section h2 {
     }
 }
 
+@media (max-width: 390px) {
+    .contact-container {
+        height: 1700px;
+    }
+}
+
 /* Whatsapp Floating image */
 
 .whatsapp-icon {
