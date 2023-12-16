@@ -594,3 +594,13 @@ section h2 {
         max-width: 400px;
     }
 }
+
+.about-us-info {
+    object-position: -75px 0px;
+}
+
+@media (max-width: 991px) {
+    .about-us-info {
+        object-position: 0px 0px;
+    }
+}
