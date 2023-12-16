@@ -588,3 +588,9 @@ section h2 {
     width: 80%;
     /* Adjust the size of the WhatsApp icon */
 }
+
+@media (min-width: 992px) {
+    .tax-service-img {
+        max-width: 400px;
+    }
+}
