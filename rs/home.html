@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./splide.min.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Remarkable Home</title>
 </head>
+
 <body>
     <header class="fixed-top">
         <!-- Bottom Row (Logo and Hamburger Menu) - Stays fixed at the top -->
         <nav id="navbar" class="navbar navbar-expand-md bg-light">
-            <a class="navbar-brand" href="./index">
-                <img src="fulllogo_transparent_nobuffer.png" alt="Remarkable" width="50">
+            <a class="navbar-brand" href="./">
+                <img src="./media/logos/RBA.png" alt="Remarkable" width="50">
             </a>
             <div id="language-bar" class="custom-d-flex p-2 text-color-logo">
-                <a href="index.html" class="language-option mr-5">EN</a>
-                <a class="language-option active-lang">RS</a>
+                <a class="language-option mr-5 active-lang">ENG</a>
+                <a href="./rs/index" class="language-option">RUS</a>
             </div>
-            <button class="navbar-toggler text-color-logo" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <button class="navbar-toggler text-color-logo" type="button" data-toggle="collapse"
+                data-target="#navbarNav">
                 <span class="navbar-toggler-icon text-color-logo"></span>
             </button>
             <div class="collapse navbar-collapse w-100 text-color-logo" id="navbarNav">
                 <ul class="navbar-nav ml-auto w-100 text-color-logo">
                     <li class="nav-item nav-item-clickable w-100 text-center text-color-logo">
-                        <a class="nav-link text-color-logo" href="./index.html">Home</a>
+                        <a class="nav-link text-color-logo" href="./">Home</a>
                     </li>
                     <li class="nav-item nav-item-clickable w-100 text-center">
-                        <a class="nav-link text-color-logo" href="./about.html">About</a>
+                        <a class="nav-link text-color-logo" href="./en/about">About</a>
                     </li>
                     <li class="nav-item nav-item-clickable w-100 text-center">
-                        <a class="nav-link text-color-logo" href="./services.html">Services</a>
+                        <a class="nav-link text-color-logo" href="./en/services">Services</a>
                     </li>
                     <li class="nav-item nav-item-clickable w-100 text-center">
-                        <a class="nav-link text-color-logo" href="./contact.html">Contact</a>
+                        <a class="nav-link text-color-logo" href="./en/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,167 +48,341 @@
     </header>
     <main>
         <!-- Hero Section -->
-    <section id="home" class="hero bg-light text-white text-center">
-        <div class="video-container">
-            <video autoplay loop muted>
-                <source src="./company-profile-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-overlay">
-            <h1 class="display-4">Remarkable Business Advisors</h1>
-            <p class="lead">Helping businesses thrive and succeed</p>
-            <a href="#contact" class="btn btn-light btn-lg">Get Started</a>
-        </div>
-    </section>
-    
+        <section id="home" class="hero bg-light text-white text-center">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./media/videos/dubai-skyline.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-overlay">
+                <h1 class="display-4">Remarkable Business Advisory</h1>
+                <p class="lead">Helping businesses thrive and succeed</p>
+                <a href="#contact" class="btn btn-light btn-lg">Get Started</a>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex flex-column align-items-center">
-                    <h2>About Us</h2>
+
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <h2>About Us</h2>
+                        <p>
+                            With 10 years of proven experience as a leading business setup consultants in Dubai, our
+                            team of company formation agents provides strategic assistance for establishing companies in
+                            Dubai. Over the past 10 years, we have successfully served approximately 1,000+ customers
+                            from 164 different countries. Our comprehensive range of services includes business setup,
+                            corporate bank account, PRO Services & Visas, VAT & Taxation Services, and Digital Branding.
+                        </p>
+                        <a href="./en/about" class="btn btn-info btn-lg text-center mb-4">Discover</a>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <img src="./media/home/team-photo.jpg" class="img-fluid rounded" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-light py-5">
+            <div class="container d-flex flex-column align-items-center">
+                <h2 class="text-center">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Business Incorporation</h5>
+                                <p class="card-text">Transforming Visions into Legacies - Your Business, Your Legacy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bank Account Setup</h5>
+                                <p class="card-text">Seamless Banking Solutions, Tailored to Your Business Needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Tax and Accounting</h5>
+                                <p class="card-text">Navigating Finances, Maximizing Returns - Your Success, Our
+                                    Expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">VISA and Residence</h5>
+                                <p class="card-text">Global Ventures, Local Expertise - Your Journey, Our Guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Logistics</h5>
+                                <p class="card-text">Efficient Logistics, Endless Possibilities - Your Supply Chain, Our
+                                    Expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Real Estate</h5>
+                                <p class="card-text">Unlocking Opportunities, Building Futures - Your Space, Our
+                                    Expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./en/services" class="btn btn-info btn-lg">Explore</a>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="my-5">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="container">
+                    <h2>Our Partners</h2>
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/01.webp" alt="partner 1">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/difc.webp" alt="partner 2">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/meydan.webp" alt="partner 3">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/04.webp" alt="partner 4">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/05.webp" alt="partner 5">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/06.webp" alt="partner 6">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/07.webp" alt="partner 7">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/08.webp" alt="partner 8">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card h-100">
+                                    <img src="./media/partners/10.webp" alt="partner 10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Register Section -->
+        <section id="register" class="bg-light py-5">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <h2>Where Should You Register Your Business in Dubai?</h2>
                     <p>
-                        With 15 years of proven experience as a leading business setup consultants in Dubai, our team of company formation agents provides strategic assistance for establishing companies in Dubai. Over the past 15 years, we have successfully served approximately 15,000+ customers from 164 different countries. Our comprehensive range of services includes business setup, corporate bank account, PRO Services & Visas, VAT & Taxation Services, and Digital Branding.
+                        Dubai is a popular destination for entrepreneurs looking to start a business in the Middle East
                     </p>
-                    <a href="./about.html" class="btn btn-info btn-lg text-center mb-4">Discover</a>
+                    <p class="text-center">
+                        Establishing a business in Dubai can be overwhelming. Business Setup Consultants can help by
+                        deciding on which company type best suits your business plan and choose to register under a free
+                        zone license, mainland license, or offshore license.
+                    </p>
+                    <div class="container mt-5">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-4 my-3">
+                                <div class="card h-100">
+                                    <img src="./media/home/offshore-company-formation-in-uae.webp" class="card-img-top"
+                                        alt="Image 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Mainland Company Formation</h5>
+                                        <ul>
+                                            <li>Foreigners can have 100% ownership in Dubai Mainland</li>
+                                            <li>Businesses may be conducted effortlessly from anywhere in the UAE</li>
+                                            <li>Ability to apply for UAE government contracts</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-md-4 my-3">
+                                <div class="card h-100">
+                                    <img src="./media/home/business-setup-n-dubai-free-zone.webp" class="card-img-top"
+                                        alt="Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Free Zone Company Formation</h5>
+                                        <ul>
+                                            <li>Get your trade license without visiting UAE</li>
+                                            <li>No physical office is required for free zone license in UAE</li>
+                                            <li>Exemptions from all taxes on the whole business</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-4 my-3">
+                                <div class="card h-100">
+                                    <img src="./media/home/offshore-company-formation-in-dubai.webp"
+                                        class="card-img-top" alt="Image 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Offshore Company Formation</h5>
+                                        <ul>
+                                            <li>Setup an offshore company in Dubai with no minimum capital requirements
+                                            </li>
+                                            <li>Common laws along with No Limits on capital repatriation</li>
+                                            <li>Availability of a wide range of legal structures</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="my-5">
+            <div class="container">
+                <h2>How We Can Start Your Business in Dubai</h2>
+                <div class="container">
+                    <div class="timeline">
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                Step 1
+                            </div>
+                            <div class="timeline-content">
+                                <i class="icon-attachment"></i>
+                                <h4>Documentation</h4>
+                                <p class="text-center">
+                                    The documentation process might be difficult for an international entrepreneur who
+                                    is setting up shop in a new country.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                Step 2
+                            </div>
+                            <div class="timeline-content">
+                                <i class="icon-code"></i>
+                                <h4 class="text-center">Attaining Trade<br>Licence in Dubai</h4>
+                                <p class="text-center">
+                                    Choosing & applying the correct trade license are crucial steps in getting your
+                                    business setup in Dubai.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                Step 3
+                            </div>
+                            <div class="timeline-content">
+                                <i class="icon-turned_in_not"></i>
+                                <h4>Initiate VISA Processing</h4>
+                                <p class="text-center">
+                                    Remarkable Business Advisory will assist you in every way to get your visa approved
+                                    in no time. Want to know more about the visa services? Contact us for more details.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                Step 4
+                            </div>
+                            <div class="timeline-content">
+                                <i class="icon-directions"></i>
+                                <h4 class="text-center">Opening Corporate<br>Bank Account</h4>
+                                <p class="text-center">
+                                    International entrepreneurs may find it difficult to open a corporate bank account
+                                    in the UAE. Our experienced team will help you in opening bank account in UAE.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container d-flex flex-column align-items-center">
+                <h2 class="text-center">Contact Us</h2>
                 <div class="col-md-6">
-                    <img src="./team-photo-pexels.jpg" class="img-fluid rounded" alt="About Us Image">
+                    <a href="mailto:info@rbaconsultancy.com" target="_blank">
+                        <p><strong>Email:</strong> info@rbaconsultancy.com</p>
+                    </a>
+                    <a href="tel:+971506153958" target="_blank">
+                        <p><strong>Phone:</strong> 971506153958</p>
+                    </a>
                 </div>
+                <a href="./en/contact" class="btn btn-info btn-lg">Contact Form</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-light py-5">
-        <div class="container d-flex flex-column align-items-center">
-            <h2 class="text-center">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Business Incorporation</h5>
-                            <p class="card-text">Transforming Visions into Legacies - Your Business, Your Legacy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Bank Account Setup</h5>
-                            <p class="card-text">Seamless Banking Solutions, Tailored to Your Business Needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Tax and Accounting</h5>
-                            <p class="card-text">Navigating Finances, Maximizing Returns - Your Success, Our Expertise.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">VISA and Residence</h5>
-                            <p class="card-text">Global Ventures, Local Expertise - Your Journey, Our Guidance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Real Estate</h5>
-                            <p class="card-text">Unlocking Opportunities, Building Futures - Your Space, Our Expertise.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Logistics</h5>
-                            <p class="card-text">Efficient Logistics, Endless Possibilities - Your Supply Chain, Our Expertise.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="./services.html" class="btn btn-info btn-lg">Explore</a>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Client Testimonials</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <p class="card-text">"Your expertise has been invaluable in our business growth."</p>
-                            <p class="card-text text-right"><strong>John Doe</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <p class="card-text">"We've achieved outstanding results with your guidance."</p>
-                            <p class="card-text text-right"><strong>Jane Smith</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <p class="card-text">"Highly recommend your services to any business."</p>
-                            <p class="card-text text-right"><strong>Mark Johnson</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container d-flex flex-column align-items-center">
-            <h2 class="text-center">Contact Us</h2>
-            <div class="col-md-6">
-                <p><strong>Email:</strong> info@rbaconsultancy.com</p>
-                <p><strong>Phone:</strong> 971506153958</p>
-                <p><strong>WhatsApp:</strong> +77012781881</p>
-            </div>
-            <a href="./contact.html" class="btn btn-info btn-lg">Contact</a>
-        </div>
-    </section>
+        </section>
     </main>
-    <footer class="bg-dark text-light py-4">
+    <a href="https://wa.me/+77012781881" target="_blank" class="whatsapp-icon">
+        <img src="./media/home/whatsapp.png" alt="WhatsApp Icon">
+    </a>
+    <footer class="bg-dark text-light py-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <ul class="list-unstyled list-inline mb-0">
                         <li class="list-inline-item mr-5"> <!-- Add margin to the right -->
-                            <a href="#" class="text-light">
-                                <i class="fab fa-facebook-f fa-lg"></i>
+                            <a target="_blank" href="https://www.youtube.com/@remarkablebusinessadvisory"
+                                class="text-light">
+                                <i class="fab fa-youtube fa-lg"></i>
                             </a>
                         </li>
                         <li class="list-inline-item mr-5"> <!-- Add margin to the right -->
-                            <a href="#" class="text-light">
-                                <i class="fab fa-twitter fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mr-5"> <!-- Add margin to the right -->
-                            <a href="#" class="text-light">
+                            <a target="_blank" href="https://www.linkedin.com/company/remarkable-business-advisory/"
+                                class="text-light">
                                 <i class="fab fa-linkedin-in fa-lg"></i>
                             </a>
                         </li>
                         <li class="list-inline-item"> <!-- No margin on the last item -->
-                            <a href="#" class="text-light">
+                            <a target="_blank" href="https://www.instagram.com/rba_fzco/" class="text-light">
                                 <i class="fab fa-instagram fa-lg"></i>
                             </a>
                         </li>
@@ -211,8 +392,45 @@
         </div>
     </footer>
     <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="splide-extension-auto-scroll.min.js"></script>
+    <script>
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 4,
+            autoScroll: {
+                speed: 1,
+            },
+            autoStart: true,
+            pauseOnHover: true,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                600: {
+                    perPage: 2, // Set perPage to 1 for screens less than 600px wide
+                },
+                992: {
+                    perPage: 4, // Set perPage to 3 for screens between 768px and 992px wide
+                },
+                1200: {
+                    perPage: 5, // Set perPage to 4 for screens greater than or equal to 992px wide
+                },
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    </script>
 </body>
+
 </html>
